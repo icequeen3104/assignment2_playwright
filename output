@@ -1,0 +1,35 @@
+PS C:\Users\User\PycharmProjects\PythonProject1> pytest tests -v -s
+=================================================== test session starts ===================================================
+platform win32 -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\User\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\PycharmProjects\PythonProject1
+configfile: pytest.ini
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 3 items                                                                                                          
+
+tests/test_cart.py::test_full_checkout_flow[chromium] Selected product: Iphone 6 32gb
+Product added
+Selected product: 2017 Dell 15.6 Inch
+Product added
+Selected product: Apple monitor 24
+Product added
+the items in the cart are:  3
+the total price of the cart is:  1890
+Id: 5804429
+Amount: 1890 USD
+Card Number: 1234567890123456
+Name: sauja
+Date: 12/2/2026
+PASSED
+tests/test_login.py::test_valid_login[chromium] the required webpage is opened
+open the login modal
+Filled the shown login form
+clicked the login button
+PASSED
+tests/test_signup.py::test_valid_signup[chromium] the required webpage is opened
+open the signup modal
+Filled the shown form
+clicked the signup button
+PASSED
+
+============================================== 3 passed in 77.94s (0:01:17) ===============================================
